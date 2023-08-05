@@ -8,11 +8,7 @@ const PORT =  8251;
 // $MiddleWares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors({
-    origin : "crud-operation-client.vercel.app",
-    methods: ["POST", "GET", "PUSH", "DELETE"],
-    credentials: true
-));
+app.use(cors());
 
 // $Routes
 @Crossorigin
