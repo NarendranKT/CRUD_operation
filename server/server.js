@@ -3,7 +3,7 @@ const express = require("express")
 const app = express();
 const cors = require('cors');
 const router = require("./routes/router");
-const PORT =  8000;
+const PORT =  8251;
 
 // $MiddleWares
 app.use(express.json());
