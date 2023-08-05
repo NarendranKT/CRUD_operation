@@ -15,6 +15,7 @@ app.use(cors({
 ));
 
 // $Routes
+@Crossorigin
 app.use("/company", router);
 
 // $Listener
