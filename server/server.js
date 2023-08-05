@@ -11,7 +11,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors({
     origin : ["https://crud-operation-api-narendrankt.vercel.app"],
     methods: ["POST", "GET", "PUSH", "DELETE"],
-    credentials: true
 ));
 
 // $Routes
