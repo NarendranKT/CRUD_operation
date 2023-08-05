@@ -9,7 +9,7 @@ const PORT =  8000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors({
-    origin : [""],
+    origin : ["https://deploy-mern-1whq-vercel.app"],
     methods: ["POST", "GET", "PUSH", "DELETE"],
 ));
 
