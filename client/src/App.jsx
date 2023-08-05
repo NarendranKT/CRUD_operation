@@ -18,7 +18,7 @@ function App() {
   
   // $Fetch data from server and to set State.
   useEffect(() => {
-    axios.get('https://crud-operation-api-narendrankt.vercel.app')
+    axios.get('https://crud-operation-api-narendrankt.vercel.app/company')
         .then(details => {
           setDetails(details.data);
           return details;
