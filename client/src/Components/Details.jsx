@@ -49,7 +49,7 @@ export default function Details(props) {
 
                     <button className="mt-3 mr-7 bg-indigo-800 hover:bg-violet-700 w-20 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75 ps-1 pe-1"
                             onClick={()=> handleUpdate(_id)}
-                    >Update</button>
+                    >Edit</button>
 
                     <button className="p-1 mt-3 mr-7 bg-indigo-800 hover:bg-violet-700 w-20 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75 ps-1 pe-1"
                             onClick={()=> handleDelete(_id)}
