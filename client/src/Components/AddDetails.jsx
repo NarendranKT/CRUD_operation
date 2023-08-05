@@ -28,7 +28,7 @@ export default function AddDetails() {
     if (formsData.companyName === "" || formsData.description === "" || formsData.phoneNumber === "" || formsData.Linkedin === "") {
       alert("Please fill all details to continue...");
     } else {
-      axios.post('http://localhost:8000/company/addDetails', formsData)
+      axios.post('https://crud-operation-api-narendrankt.vercel.app/addDetails', formsData)
         .then((res) => {
           SetFormsData({
             companyName: "",
