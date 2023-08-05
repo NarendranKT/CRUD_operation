@@ -9,7 +9,7 @@ const PORT =  8251;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors({
-    origin : "crud-operation-client-h1g7wam3j-narendrankt.vercel.app",
+    origin : "crud-operation-client.vercel.app",
     methods: ["POST", "GET", "PUSH", "DELETE"],
     credentials: true
 ));
