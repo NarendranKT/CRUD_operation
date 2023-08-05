@@ -8,7 +8,7 @@ export default function Details(props) {
     const { _id, companyName, description, Linkedin, phoneNumber } = props;
     
     function handleDelete(id) {
-        axios.delete(`https://crud-operation-api-narendrankt.vercel.app/company/DeleteDetails/${id}`)
+        axios.delete(`https://crud-operation-98yvqt3pj-narendrankt.vercel.app/company/DeleteDetails/${id}`)
             .then((res) => console.log(res))
             .catch((err)=>console.log(err))
     }
