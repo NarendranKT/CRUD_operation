@@ -10,7 +10,7 @@ export default function UpdateDetails() {
     const [user, Setuser] = React.useState({});
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/company/search/${userId}`)
+        axios.get(`https://crud-operation-api-narendrankt.vercel.app/company/search/${userId}`)
         .then((res) => { Setuser(res.data) })
         .catch((err)=>{console.log(err);})
     }, [])
