@@ -33,7 +33,7 @@ export default function UpdateDetails() {
         if (user.companyName === "" || user.description === "" || user.phoneNumber === "" || user.Linkedin === "") {
             alert("Please fill all details to continue...");
         } else {
-            axios.put(`http://localhost:8000/company/UpdateDetails/${userId}`, user).then((res) => console.log(res))
+            axios.put(`https://crud-operation-api-narendrankt.vercel.app/company/UpdateDetails/${userId}`, user).then((res) => console.log(res))
                 .catch((err) => console.log(err));
             
             navigate('/')
