@@ -10,7 +10,7 @@ export default function UpdateDetails() {
     const [user, Setuser] = React.useState({});
 
     useEffect(() => {
-        axios.get(`https://crud-operation-api.vercel.app/company/search/${userId}`)
+        axios.get(`http://localhost:8000/company/search/${userId}`)
         .then((res) => { Setuser(res.data) })
         .catch((err)=>{console.log(err);})
     }, [])
@@ -33,7 +33,7 @@ export default function UpdateDetails() {
         if (user.companyName === "" || user.description === "" || user.phoneNumber === "" || user.Linkedin === "") {
             alert("Please fill all details to continue...");
         } else {
-            axios.put(`https://crud-operation-api.vercel.app/company/UpdateDetails/${userId}`, user).then((res) => console.log(res))
+            axios.put(`http://localhost:8000/company/UpdateDetails/${userId}`, user).then((res) => console.log(res))
                 .catch((err) => console.log(err));
             
             navigate('/')
