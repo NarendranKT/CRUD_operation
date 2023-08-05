@@ -18,7 +18,7 @@ function App() {
   
   // $Fetch data from server and to set State.
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/company/')
+    axios.get('https://crud-operation-api-narendrankt.vercel.app/company')
         .then(details => {
           setDetails(details.data);
           return details;
@@ -32,7 +32,7 @@ function App() {
 
   // $To handle the changed data and refresh the data.
   function handleRefresh(){
-      axios.get('http://localhost:8000/company/')
+      axios.get('https://crud-operation-api-narendrankt.vercel.app/company')
         .then(details => {
           setDetails(details.data);
           // console.log(details.data);
